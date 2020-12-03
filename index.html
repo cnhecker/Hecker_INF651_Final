@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css"/> 
+    <script src="js/main.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="banner">
+            <div id="sunImage">
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sun"/>
+            </div>
+            <div id="sunAndCloudImage">
+                <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="sun and cloud"/>
+            </div>
+            <div id="sunAndRaincloudImage">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="sun and raincloud" />
+            </div>
+            <div id="cloudAndThunderImage">
+                <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="cloud and thunder"/>
+            </div>
+        </div>
+        
+        
+        <header tabindex="1" aria-label="Weather Forcast">Weather Forcast</header>
+        <section class="citySearchEntry">
+            <form id="cityEntryForm" type="submit" onsubmit="return false">
+                
+                <input id="cityEntry" type="text" size="5" autocomplete="off" placeholder="e.g. 90210" aria-label="Type Zip Code" tabindex="2" />
+                <button id="searchCity" class="button" title="Search for Zip Code" aria-label="Search for a zip code to display its weather" tabindex="3">Search</button>
+                <button id="saveCitySearch" class="button" title="Save city as default" aria-label="Save a city to display as your deafult city" tabindex="4">Save</button>
+            </form>
+        </section>
+        <div id="searchStatusMessage" type="text" aria-label="We could not find that city. Please try again." tabindex="5"></div>
+        <section class="defaultWeatherContainer">
+            <div id="defaultWeatherTitle">
+                <h1 id="defaultLocation" type="text" aria-label="City" tabindex="6"></h1>
+                <h2 id="currentDate" type="text" aria-label="Date" tabindex="7"></h2>
+            </div>
+            <div id="currentTemperature" type="text" aria-label="Temperature" tabindex="8"></div>
+            <div id="weatherIconHolder">
+                <img id="weatherIcon" src="" />
+            </div>
+            <div id="currentWeatherCondition" type="text" aria-label="Weather Conditions" tabindex="9"></div>
+        </section>
+    </main>
+</body>
+</html>

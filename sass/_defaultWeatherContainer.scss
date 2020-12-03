@@ -1,0 +1,37 @@
+.defaultWeatherContainer {
+    min-height: 10vh;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    div[id="defaultWeatherTitle"] {
+        display: inline;
+        align-items: flex-end; 
+        font-size: 30px; 
+        color: $default-font-color;
+        padding: 20px;
+    }
+
+    div[id="currentTemperature"] {
+        color: $default-font-color;
+        font-size: 70px;
+        padding: 5px;
+        justify-content: center;
+        display: flex;
+    }
+
+    div[id="weatherIconHolder"] {
+        color: $default-font-color;
+        font-size:50px;
+        padding: 5px;
+        justify-content: center;
+        display: flex;
+    }
+
+    div[id="currentWeatherCondition"] {
+        color: $default-font-color;
+        font-size:50px;
+        padding: 4px;
+        justify-content: center;
+        display: flex;
+    }
+}

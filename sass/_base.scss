@@ -1,0 +1,68 @@
+$default-font-color: #000;
+$background-color: #66B2FF;
+$container-bgcolor: #f2f2f2;
+$container-bordercolor: #000;
+$textbox-bordercolor: lightgray;
+$button-textcolor: #fff;
+$button-hovercolor: #000;
+$search-button-color: #4CAF50;
+$search-statuscolor: #9F6060;
+
+@mixin mp($size){
+    @media only screen and (min-width: $size){
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body {
+    font-size: 16px; // never less than 16px
+    font-family: "Montserrat", sans-serif;
+    color: $default-font-color;
+    @include mp(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    padding: 20px;
+    background-color: $background-color;
+}
+
+header {
+    color: $container-bgcolor;
+    font-size: 60px;
+    padding: 0px 50px 50px 50px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+section {
+    background-color: $container-bgcolor;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-bordercolor;
+    border-radius: 10px; 
+}
+
+div[id="searchStatusMessage"] {
+    color: $search-statuscolor;
+    font-size: 25px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}   
+
+div[id="banner"] {
+    display: flex;
+    justify-content: space-around;
+  }
