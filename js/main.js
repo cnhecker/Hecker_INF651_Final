@@ -8,7 +8,7 @@ const currentLocation = (data) => {
     currentDate.innerText = dateObj.toLocaleString('en-US', dateDescription);
 }
 
-const currentForcast = (data) => {
+const currentForecast = (data) => {
     let currentTemperature = document.getElementById("currentTemperature");
     let weatherIcon = document.getElementById("weatherIcon");
     let currentWeatherCondition = document.getElementById("currentWeatherCondition")
@@ -30,7 +30,7 @@ const getWeatherData = async (zipCode) => {
             document.getElementById('searchStatusMessage')
             searchStatusMessage.innerHTML = "";
             currentLocation(data);
-            currentForcast(data);
+            currentForecast(data);
             return data;
         }
     }

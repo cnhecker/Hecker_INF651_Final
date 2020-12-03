@@ -1,6 +1,6 @@
 $default-font-color: #000;
 $background-color: #66B2FF;
-$container-bgcolor: #f2f2f2b0;
+$container-bgcolor: #c9c9c9;
 $container-bordercolor: #000;
 $textbox-bordercolor: lightgray;
 $button-textcolor: #fff;
@@ -35,7 +35,7 @@ body {
 }
 
 header {
-    color: $container-bgcolor;
+    color: $button-textcolor;
     font-size: 60px;
     padding: 0px 50px 50px 50px;
     justify-content: center;
@@ -55,7 +55,7 @@ section {
 
 div[id="searchStatusMessage"] {
     color: $search-statuscolor;
-    font-size: 25px;
+    font-size:s 25px;
     padding: 20px;
     justify-content: center;
     display: flex;
